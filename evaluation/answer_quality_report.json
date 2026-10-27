@@ -1,0 +1,57 @@
+{
+    "total_questions": 5,
+    "passed": 4,
+    "failed": 1,
+    "pass_rate": 0.8,
+    "results": [
+        {
+            "question": "What is a Physics-Informed Neural Network (PINN)?",
+            "answerable": true,
+            "answer": "Based on the provided document, a Physics-Informed Neural Network (PINN) is an architecture that integrates scientific machine learning with physics to model complex physical systems and serve as an alternative to traditional data-driven methods for solving partial differential equations (PDEs) [sample.pdf, p. 8].\n\nAccording to the text, PINNs are defined by the following key aspects:\n\n* **Purpose:** They are designed to solve physical problems characterized by limited data availability, noisy measurements, and time-consuming simulations [sample.pdf, p. 4].\n* **Structure and Implementation:** PINNs embed or incorporate the governing physical equations of a system into the loss function of the neural network as constraints [sample.pdf, p. 2] [sample.pdf, p. 8]. \n* **Physics Constraints:** By constraining the network to meet the laws of physics and fundamental principles, PINNs generate predictions that adhere to known physical laws [sample.pdf, p. 4] [sample.pdf, p. 8]. The text states that this approach helps support output predictions even in regions with limited or no data [sample.pdf, p. 2] (note that while the source states this helps output predictions, predictions are not guaranteed to be accurate or precise).",
+            "checks": {
+                "citation_present": true,
+                "abstained": false
+            },
+            "passed": true
+        },
+        {
+            "question": "How are governing physical equations incorporated into PINNs?",
+            "answerable": true,
+            "answer": "Based on the provided document, governing physical equations are incorporated into Physics-Informed Neural Networks (PINNs) through the following mechanisms:\n\n* **Loss Function Constraints:** Governing physical equations are incorporated directly into the neural network's loss function as constraints [sample.pdf, p. 2]. \n* **Embedding into Neural Network Architecture:** PINNs embed the governing equations of physical systems into the network to constrain predicted solutions so they adhere to physical laws and fundamental principles [sample.pdf, p. 4, p. 8].\n* **Automatic Differentiation:** Predicted outputs ($u$) from the output layer are directed into a differentiation layer, which performs automatic differentiation with respect to the input spatiotemporal coordinates ($x$ and time $t$) to construct each differential term of the governing partial differential equations (PDEs) [sample.pdf, p. 5].\n\n*(Note: While the source text states that incorporating these constraints helps ensure predictions in areas with limited or no data, this reflects the design approach described in the document rather than a guarantee of prediction accuracy or precision.)*",
+            "checks": {
+                "citation_present": true,
+                "abstained": false
+            },
+            "passed": true
+        },
+        {
+            "question": "What challenges do PINNs face?",
+            "answerable": true,
+            "answer": "Based on the provided passages, physics-informed neural networks (PINNs) are noted to encounter a \"variety of challenges\" during active research [sample.pdf, p. 8]. They are designed to address physical problems characterized by limited data availability, such as:\n\n* Noisy measurements [sample.pdf, p. 4]\n* Time-consuming simulations [sample.pdf, p. 4]\n* Complex and nonlinear engineering systems, such as thermal runaway (TR) phenomena in battery management systems [sample.pdf, p. 24]\n\nHowever, the specific list of individual challenges faced by PINNs is not fully detailed in the provided document passages, as the section introducing these challenges cuts off [sample.pdf, p. 8]. Further details on specific challenges are not available in the provided text.",
+            "checks": {
+                "citation_present": true,
+                "abstained": true
+            },
+            "passed": false
+        },
+        {
+            "question": "What is the price of the battery discussed in this document?",
+            "answerable": false,
+            "answer": "Based on the provided document passages, the price of the battery is not mentioned. The information is not available in the provided document.",
+            "checks": {
+                "abstained": true
+            },
+            "passed": true
+        },
+        {
+            "question": "How do PINNs differ from conventional neural networks?",
+            "answerable": true,
+            "answer": "Based on the provided document, Physics-Informed Neural Networks (PINNs) differ from conventional neural networks in the following ways:\n\n* **Incorporation of Physical Equations as Constraints:** PINNs are designed by incorporating governing physical equations directly into the loss function as constraints, which constrains the predicted solution to meet the laws of physics and fundamental principles [sample.pdf, p. 2, p. 4]. The source states that this helps provide output predictions even in areas with limited or no data, addressing shortcomings of conventional PINNs [sample.pdf, p. 2]. \n* **Inclusion of a Differentiation Layer:** Unlike standard architectures, PINNs include a differentiation layer next to the output layer [sample.pdf, p. 5]. This layer performs automatic differentiation on the neural network with respect to its input coordinates ($x$) and time ($t$) to construct each differential term of a partial differential equation (PDE) [sample.pdf, p. 5].\n* **Targeted Application for Limited Data:** PINNs are specifically designed to solve physical problems characterized by limited data availability, such as time-consuming simulations and noisy measurements [sample.pdf, p. 4].\n\n*(Note: While the source indicates these design features help support predictions in data-limited scenarios, this does not guarantee that the predictions will be accurate or precise in all cases).*",
+            "checks": {
+                "citation_present": true,
+                "abstained": false
+            },
+            "passed": true
+        }
+    ]
+}
