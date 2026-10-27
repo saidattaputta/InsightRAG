@@ -1,0 +1,33 @@
+
+[
+  {
+    "id": 1,
+    "question": "What is a Physics-Informed Neural Network (PINN)?",
+    "expected_pages": [2, 4, 8],
+    "answerable": true
+  },
+  {
+  "id": 2,
+  "question": "How are governing physical equations incorporated into PINNs?",
+  "expected_pages": [2, 4, 5, 6, 8],
+  "answerable": true
+  },
+  {
+  "id": 3,
+  "question": "What challenges do PINNs face?",
+  "expected_pages": [8, 9, 10, 13, 14, 15, 24],
+  "answerable": true
+  },
+  {
+    "id": 4,
+    "question": "What is the price of the battery discussed in this document?",
+    "expected_pages": [],
+    "answerable": false
+  },
+  {
+  "id": 5,
+  "question": "How do PINNs differ from conventional neural networks?",
+  "expected_pages": [3, 4, 7, 8],
+  "answerable": true
+  }
+]

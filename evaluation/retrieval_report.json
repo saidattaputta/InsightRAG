@@ -1,0 +1,87 @@
+{
+  "top_k": 5,
+  "evaluated_questions": 4,
+  "mean_recall_at_k": 0.5839285714285715,
+  "mrr": 0.75,
+  "details": [
+    {
+      "question": "What is a Physics-Informed Neural Network (PINN)?",
+      "expected_pages": [
+        2,
+        4,
+        8
+      ],
+      "retrieved_pages": [
+        4,
+        2,
+        8,
+        5,
+        29
+      ],
+      "recall_at_k": 1.0,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "How are governing physical equations incorporated into PINNs?",
+      "expected_pages": [
+        2,
+        4,
+        5,
+        6,
+        8
+      ],
+      "retrieved_pages": [
+        8,
+        2,
+        4,
+        5,
+        29
+      ],
+      "recall_at_k": 0.8,
+      "first_relevant_rank": 1,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "question": "What challenges do PINNs face?",
+      "expected_pages": [
+        8,
+        9,
+        10,
+        13,
+        14,
+        15,
+        24
+      ],
+      "retrieved_pages": [
+        4,
+        8,
+        5,
+        6,
+        24
+      ],
+      "recall_at_k": 0.2857142857142857,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "question": "How do PINNs differ from conventional neural networks?",
+      "expected_pages": [
+        3,
+        4,
+        7,
+        8
+      ],
+      "retrieved_pages": [
+        5,
+        4,
+        6,
+        2,
+        15
+      ],
+      "recall_at_k": 0.25,
+      "first_relevant_rank": 2,
+      "reciprocal_rank": 0.5
+    }
+  ]
+}
